@@ -1,14 +1,9 @@
 // Using terany operator
-
 function fibonacci ( n ) {
-  return n < 1 ? 0
-    : n <= 2 ? 1
-      : fibonacci( n - 1 ) + fibonacci( n - 2 )
+  return n < 1 ? 0 : n <= 2 ? 1 : fibonacci( n - 1 ) + fibonacci( n - 2 )
 }
 
-
 // Using if else statement
-
 // function fibonacci ( num ) {
 //   if ( num <= 1 ) {
 //     return num
