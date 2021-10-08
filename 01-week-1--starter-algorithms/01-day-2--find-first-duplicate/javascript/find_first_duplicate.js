@@ -1,17 +1,12 @@
 function findFirstDuplicate ( arr ) {
-  // This Set object will allow me to store each element from the given array as a unique value, and check if it already contains a value using two functions: Set.add() and Set.has().
   let elementSet = new Set()
 
-  // for of loop to look at each element of the array
   for (element of arr) {
-    // check to see if element exists and if so return
     if ( elementSet.has( element ) ) {
       return element
     } 
-    // if not add element to elementSet
     elementSet.add(element)
   }
-  //  If no duplicates were found return -1
   return -1
 }
 
